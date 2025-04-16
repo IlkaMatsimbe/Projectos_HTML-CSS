@@ -1,0 +1,185 @@
+Conceitos do curso de HTML e CSS 
+<a href="https://www.youtube.com/" target="_blank">Link To Youtube</a> - E um atributo html que modifica como um elemento se comporta. 
+* heref e um nome do atributo,
+* o que esta entre aspas e o valor do atributoS,
+* o target blank nos direciona para uma nova pagina, ao cliclar no link.
+
+
+HOVER - conhecido como pseudo-classe que adiciona estilos extras em uma determinada situacao.
+
+Active: tambem e outro pseudo-classe.
+
+OPACITY: diz se comportamento e normal ou nao, no estado 1 ou 0. E usado para esmaecer um elemento.
+
+SHADOW -coloca o background um pouco obscuro
+
+TRANSICTION - faz transicoes nos elementos
+
+
+
+CSS BOX MODEL
+* Permite espaco entre os nossos elementos, assim como adicionar espaco dentro do nosso elemento para torna-lo maior. 
+Os seus elementos sao:
+ - Por exemplo Margin-right, Margin-left, etc
+ - Por exemplo, Pading que e a parte interna do botao / funcionalidade
+
+HTML ENTITY - nos permite digitar caracteres especiais, por exemplo: ✓, ., etc 
+
+
+ESPECIFICIDADES do CSS
+SELETOR - é um padrão usado para selecionar elementos HTML e aplicar estilos a eles. Ele define quais elementos serão estilizados pelo CSS.
+
+* Sempre que tivermos um simbolo < ou >, a melhor maneira e deixa-lo em "&gt;" que podemos encontrar na pagina HTML ENTITY GREATER THAN.
+
+
+ELEMENTO DE TEXTO - e um elemento que esta dentro de uma linha de texto.
+<SPAN> - nos permite modificar uma parte especifica do texto sem afectar o todo, e podemos estiliza-lo como quisermos.
+
+img scr - scr informa ao computador qual imagem exibir no site.
+object-fit cover - ele organiza a imagem, determina que a imagem seja 300 / 300.
+object-fit contain - faz a imagem encolher ate que ela fique na area escolhida, por exemplo 300px.
+
+
+PROPRIEDADE DE EXIBICAO EM CSS
+Em HTML existem 3 elementos:
+- Block Element: ocupa a linha inteira. Ex: qualquer paragrafo que adicionamos.
+- Inline-block element: ocupa apenas o espaco necessario e nao toda linha. Ex: elemento de imagem ou caixa de texto.
+- Inline element: sao elementos de texto, eles aparecem dentro de uma linha de texto. Ex: quando usamos o <strong>/<strong>
+
+Elemento <div> - significa divisao, o div e apenas uma caixa, ele tambem pode ser considerado um block element pois ocupa uma linha inteira.
+* A vantagem de uma div e que ela pode conter outros elementos.
+* Div = containers
+
+
+NESTED LAYOUTS TECHNIQUE
+* Existem 2 tipos de layout:
+ - vertical layout: aqui os itens ficam em cima um do outro.
+ - horizontal layout: os itens estao lado a lado.
+
+font-family: Roboto, Arial;  - Numa situacao dessas onde colocamos a virgula entre duas fontes, e chamada de  pilha de fontes, isso nos permite configurar uma outra fonte para o backup.
+ 
+margin-top: 0;
+margin-bottom: 0; essas coisas elimninam todas as margens definidas por padrao. 
+
+
+
+CSS GRID - 
+e uma maneira melhor de criar layuts horizontais
+<div style="">div 1</div>  - o atributo style nos permite escrever o codigo CSS dentro de uma div.
+
+Grid - e um layout que possui linhas e colunas. Em Gride 10FR - esse FR (free space) signfica espaco livre, ou seja, ocupar o espaco restante na grade.
+column-gap: 20px; - cria espaco entre as colunas.
+row-gap: 20px;  - cria espaco entre as linhas.
+
+
+
+FLEXBOX
+* E outra maneira de criar Layout  e manter eles alinhados e em especifico para este projecto, usaremos para fazer o cabecalho da pagina de youtube.
+* Flexbox cria mais de um layout mas e mais flexivel
+* Ele tambem requer um conteiner
+flex: 1;  - cria espacamento .
+
+
+NESTED FLEXBOX
+  flex-shrink: 0;  - isso faz com que os itens nao encolham quando a pagina for redimensionada
+
+  width: 0; = shrink - isso faz encolher o item
+
+
+
+CSS POSITION
+* A posicao nos ajuda a manter o cabecalho no topo da pagina enquanto rolamos. 
+* Isso tambem nos ajuda a manter a barra lateral no topo da pagina.
+* Pde se colocar um elemento em cima do outro elemento que estiver a usar a posicao css.
+position: static; - e a posicao padrao
+posicao: fixed - 
+top: 0px; - especifica a que distancia nosso elemento esta do topo da janela
+left: 10px - nos diz quanto espaco ha entre o elemento e aborda esquerda dele.
+
+*Se colocarmos em direcoes opostas, o elemento se esticara. 
+exemplo: left: 50px;    right: 50px;
+
+
+
+POSITION ABSOLUTE AND RELATIVE
+* Position Absolute: assume os mesmos valores que a posicao fixa, mas com uma diferenca. Na posicao fixa, os elementos sao colocados na janela do navegador enquanto que posicao absoluta os elemntos sao colocados na pagina.
+z-index  - determina quais elementos aparecem na frente e quais elementos aparecem atras. Por padrao e Zero. 
+* Pode-se colocar posicao absoluta dentro da posicao fixa e isso e muito util. 
+
+* Position Relative: ela exibe o elemento normalmente, excepto se colocarmos a posicao absoluta nesse elemento
+
+  - Para colocar um elemento no canto de outro elemento, por exemplo: colocar o tempo do video, dentro do elemento na imagem, devemos colocar uma posicao absoluta dentro de uma posicao relativa
+
+    
+    
+* Existe um tipo de selector onde podemos direcionar todas as imagens dentro de todos os links criados, por exemplo:
+  - sidebar-link img {}
+
+* A melhor maneira de centralizar algo verticalmente no CSS, e como o flexbox
+  Ex: align-items: center;
+
+
+
+
+SHORTHAN PROPERTIES (ATALHOS CSS)
+RESPONSIVE DESIGN
+* Faz com que o site tenha a melhor aparencia possivel, em todos os tamanhos da tela.
+
+* @media (max-width: 600px) {} - signfica que teremos um monte de CSS que sera ativado caso o tamanho da tela seja 600px ou menor
+
+*  padding: 4px; - define os 4 pixers pra todos os lados;
+
+*  padding: 4px 10px; 
+  - (4px- padding vertical, top e bottom)
+  - (10px - padding horizontal, left e right)
+
+*   padding: 4px 10px 5px 3px; -  define as 4 direcoes em uma unica linha.
+  - 4px - padding top;
+  - 10px - padding right;
+  - 5px - padding bottom;
+  - 3px - padding left;
+
+* NB: Com o margin pode- se aplicar o mesmo
+
+* Podemos definir o border da seguinte maneira:
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(192, 192, 192);
+EXEMPLO:  border: 1px solid rgb(192, 192, 192);
+
+
+
+INHERITANCE (HERANCA)
+* Heranca significa que para certas propriedades CSS, se definirmos a propriedade no elemento externo, sera passado para os elementos internos. 
+  - Exemplo:   text-decoration: underline; - ele vai dcorar todos os elementos que esta nesse tal elemento externo, no meu caso e a classe 'video-grid'.
+
+
+
+SEMANTICS ELEMENTS (ELEMENTOS SEMANTICOS)
+EXEMPLO:   <header></header> ou  <nav></nav> - funcionam da mesma forma que uma <div>, excepto que eles tem um significado especial para leitores de tela (robos), mecanismos de busca, etc.
+* O <main> deve conter o conteudo principal do meu site.
+* O <section>
+
+
+COMMENTS 
+* Sao os pedacos de codigo que o computador ignora, mas posso ler pra mim mesmo, para me lembrar de informacoes ou para dizer a mim mesmo o que esta a acontecer no codigo.
+EXEMPLO: <!--COMMENT--> em HTML e /* */ em CSS
+
+PESQUISAR: css rounded corners; css text dont wrap;
+
+
+
+  
+
+
+
+CTRL + SHIFT + I / F : organiza as linhas do codigo.
+CTRL + f : comando para pesquisar dentro do codigo
+
+
+AULA PARADA EM 6:20:02
+
+
+
+
+
